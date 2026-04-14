@@ -11,7 +11,7 @@ if st.button("Research"):
     if query:
         with st.spinner("Agent is researching..."):
             response = requests.post(
-                "http://127.0.0.1:8000/analyze",
+                "https://researchagent-production-ba79.up.railway.app/analyze",
                 json={"query": query}
             )
             if response.status_code == 200:
