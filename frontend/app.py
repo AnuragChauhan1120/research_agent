@@ -11,7 +11,7 @@ if st.button("Research"):
     if query:
         with st.spinner("Agent is researching..."):
             response = requests.post(
-                "https://Trolling-Kakashi-research-agent.hf.space",
+                "https://Trolling-Kakashi-research-agent.hf.space/analyze",
                 json={"query": query}
             )
             if response.status_code == 200:
